@@ -31,7 +31,7 @@ const winconditions = [
 ];
 
 let option = ["", "", "", "", "", "", "", "", ""];
-let currentplayer = "X";
+let currentplayer = "x";
 let running = false;
 
 function initializegame() {
@@ -57,7 +57,7 @@ function updateCell(cell, index) {
 }
 
 function changePlayer() {
-    currentplayer = (currentplayer === "X" ? "O" : "X");
+    currentplayer = (currentplayer === "x" ? "o" : "x");
     statustext.textContent = `${currentplayer === "X" ? player1.value : player2.value}, you're up`;
 }
 
