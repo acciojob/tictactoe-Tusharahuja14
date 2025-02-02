@@ -1,7 +1,7 @@
 //your JS code here. If required.
 let container = document.querySelector(".container");
-let player1 = document.getElementById("player-1");
-let player2 = document.getElementById("player-2");
+let player1 = document.getElementById("player1");
+let player2 = document.getElementById("player2");
 let submit = document.getElementById("submit");
 let players = document.querySelector(".players");
 let gameContainer=document.querySelector("#gameContainer");
