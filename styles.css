@@ -1,1 +1,50 @@
 /*  your css code here. If applicable */
+*{
+    margin:0;
+    padding:0;
+    box-sizing: border-box;
+}
+h1{
+	text-align:center;
+	margin-bottom:5px;
+}
+.players{
+	text-align:center;
+}
+input{
+	width:35%;
+	height:6vh;
+	border:2px solid black;
+	margin-bottom:3%;
+	margin-top:1%;
+}
+#submit{
+	width:35%;
+	height:7vh;
+}
+.cell{
+    height:75px;
+    width:75px;
+    border: 1px solid black;
+    box-shadow: 0 0 0 1px;
+    line-height:75px;
+    font-size:50px;
+    cursor: pointer;
+}
+#gameContainer{
+    font-family: "Permanent Marker",cursive;
+    text-align:center;
+}
+#cellContainer{
+    display: grid;
+    grid-template-columns: repeat(3,auto);
+    width:225px;
+   margin: auto;
+	background-color:#FFB6C1;
+}
+/* Winning cell style */
+.winner {
+    background-color: #800080;
+	border:1px solid black;
+    font-weight: bold;
+}
