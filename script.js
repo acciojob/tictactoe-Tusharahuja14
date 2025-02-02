@@ -74,7 +74,7 @@ function checkingWinner() {
     }
 
     if (roundwon) {
-        statustext.textContent = `${currentplayer === "X" ? player1.value : player2.value} congratulations you won!`;
+        statustext.textContent = `${currentplayer === "X" ? player1.value : player2.value}congratulations you won!`;
         running = false;
     } else if (!option.includes("")) {
         statustext.textContent = "Draw!";
@@ -91,7 +91,7 @@ function highlightWinner(a, b, c) {
 
 function restartGame() {
     players.style.display = "block";
-    currentplayer = "X";
+    currentplayer = "x";
     option = ["", "", "", "", "", "", "", "", ""];
     cells.forEach(cell => cell.textContent = "");
     statustext.textContent = `${player1.value}, you're up`;
